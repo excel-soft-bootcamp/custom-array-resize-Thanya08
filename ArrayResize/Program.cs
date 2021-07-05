@@ -13,8 +13,7 @@ namespace ArrayResize
                       
             int[] newarray= new int[newSize];
             Array.Copy(oldarray, newarray, oldarray.Length);
-            oldarray = new int[newSize];
-            Array.Copy(newarray, oldarray, newSize);
+            oldarray=newarray;
            
         }
     }
